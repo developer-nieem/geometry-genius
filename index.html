@@ -7,13 +7,121 @@
     <title>Ph assignment 5 </title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
 <body>
     
-    <header>
-
+    <header class="m-4 ">
+        <div class="navbar bg-slate-300 rounded-lg">
+            <div class="flex-1">
+              
+                <h3><span class="font-semibold text-4xl">Interactive</span> </br>
+                    Geometry Genius</h3>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><button class="btn btn-primary text-white">Blog</button></li>
+              </ul>
+            </div>
+          </div>
     </header>
+
+    <main>
+        <section>
+            <div class="p-4 md:flex gap-2">
+                <div class="grid md:grid-cols-3 gap-4 md:w-[70%]">
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body  text-center">
+                          <h2 class=" font-semibold text-2xl">Triangle</h2>
+                          <p>Area (A) = 0.5 X b X h</p>
+
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="font-semibold text-2xl">Rectangle</h2>
+                          <p>Area (A) =  W X I</p>
+
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="font-semibold text-2xl">Parallelogram</h2>
+                          <p>Area (A) =  b    X   h</p>
+
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="font-semibold text-2xl">Rhombus</h2>
+                          <p>Area (A) = 0.5 X D1 X D2</p>
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="font-semibold text-2xl">Pentagon</h2>
+                          <p>Area (A) = 0.5 X p X b</p>
+
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-full bg-base-100 border p-4 ">
+                        <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                          <h2 class="font-semibold text-2xl">Ellipse</h2>
+                          <p>Area (A) =πab</p>
+
+                          <p> <input class="bg-slate-200 p-2 rounded-lg w-16 my-2" type="text"> CM <input class="bg-slate-200 p-2 rounded-lg w-16 my-2 " type="text"> CM</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[28%]">
+                    <h2 class="text-2xl underline font-semibold text-center">Area Calculation</h2>
+
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                          <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                              <th>1</th>
+                              <td>Triangle</td>
+                              <td>12cm</td>
+                              <td><button class="btn">convert to m</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- js  -->
