@@ -20,8 +20,8 @@ function createTableRow(itemsName, calculate ) {
     tr.innerHTML =  `
         <th>${1}</th>
         <td>${itemName}</td>
-        <td>${calculate}</td>
-        <td><button  class="btn btn-primary text-sm">Convert to m<sup>2</sup></button></td>
+        <td>${calculate}cm<sup>2</sup></td>
+        <td><button  class="btn btn-primary text-[10px]">Convert to m<sup>2</sup></button></td>
     `
     tableBody.appendChild(tr);
 }
@@ -34,20 +34,7 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
 
     const calCulateTriangle =  0.5 * triangleValue1 *  triangleValue2 ;
 
+// show calculation data on table
+    createTableRow('triangle' , calCulateTriangle);
 
-
-    // get item name
-    const itemName =  document.getElementById('triangle').innerText;
-
-    // get table body 
-    const tableBody =  document.getElementById('table-body');
-    const tr =  document.createElement('tr');
-    tr.innerHTML =  `
-        <th>${1}</th>
-        <td>${itemName}</td>
-        <td>${calCulateTriangle}</td>
-        <td><button  class="btn btn-primary text-sm">Convert to m<sup>2</sup></button></td>
-    `
-    tableBody.appendChild(tr);
-    
 })
