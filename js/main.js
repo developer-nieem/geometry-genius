@@ -28,19 +28,6 @@ function createTableRow(itemsName, slNumber, calculate ) {
     tableBody.appendChild(tr);
 }
 
-// // validation  function
-
-// function inpuValidation(value1 , value2){
-//     if(isNaN(value1) || isNaN(value2)){
-//         alert('Please put number');
-       
-//     }else if(value1 < 0 || value2 < 0){
-//         alert('Please put positive number');
-        
-//     }
-    
-// }
-
 
 // Traiangle 
 document.getElementById('triangle-btn').addEventListener('click', function(){
@@ -58,10 +45,11 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
             
 
     const calCulateTriangle =  0.5 * triangleValue1 *  triangleValue2 ;
+    const totalResultTriangle=  parseFloat(calCulateTriangle.toFixed(2));
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('triangle' ,slNumber, calCulateTriangle);
+    createTableRow('triangle' ,slNumber, totalResultTriangle);
 
 })
 
@@ -79,10 +67,11 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
             return;
         }
     const calCulateRectangle  =  rectangleValue1 *  rectangleValue2 ;
+    const totalResultRectangle=  parseFloat(calCulateRectangle.toFixed(2));
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('rectangle' ,slNumber, calCulateRectangle);
+    createTableRow('rectangle' ,slNumber, totalResultRectangle);
 
 })
 
@@ -102,10 +91,11 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
             return;
         }
     const calCulateParallelogram  =  parallelogramValue1 *  parallelogramValue2 ;
+    const totalResultParallelogram =  parseFloat(calCulateParallelogram.toFixed(2));
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('parallelogram' ,slNumber, calCulateParallelogram);
+    createTableRow('parallelogram' ,slNumber, totalResultParallelogram);
 
 })
 
@@ -122,11 +112,12 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
             alert('Please put positive number');
             return;
         }
-    const calCulaterhombus  = 0.5 *  rhombusValue1 *  rhombusValue2 ;
+    const calCulateRhombus  = 0.5 *  rhombusValue1 *  rhombusValue2 ;
+    const totalResultRhombus =  parseFloat(calCulateRhombus.toFixed(2));
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('rhombus' ,slNumber, calCulaterhombus);
+    createTableRow('rhombus' ,slNumber, totalResultRhombus);
 
 })
 
@@ -143,11 +134,12 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
             alert('Please put positive number');
             return;
         }
-    const calCulatepentagon  = 0.5 *  pentagonValue1 *  pentagonValue2 ;
+    const calCulatePentagon  = 0.5 *  pentagonValue1 *  pentagonValue2 ;
+    const totalResultPentagon =  parseFloat(calCulatePentagon.toFixed(2));
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('pentagon' ,slNumber, calCulatepentagon);
+    createTableRow('pentagon' ,slNumber, totalResultPentagon);
 
 })
 
@@ -164,10 +156,12 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
             alert('Please put positive number');
             return;
         }
-    const calCulateellipse  = 3.1415 *  ellipseValue1 *  ellipseValue2 ;
+
+    const calCulateEllipse  = 3.1415 *  ellipseValue1 *  ellipseValue2 ;
+    const totalResultEllipse =  parseFloat(calCulateEllipse.toFixed(2))
 
     slNumber+= 1;
 // show calculation data on table
-    createTableRow('ellipse' ,slNumber, calCulateellipse);
+    createTableRow('ellipse' ,slNumber, totalResultEllipse);
 
 })
