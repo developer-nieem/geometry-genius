@@ -30,19 +30,47 @@
   <section>
     <div class="p-11 shadow-xl m-8">
       <h2 class="text-4xl font-semibold pb-5">What is DOM and what is the purpose of DOM?</h2>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus et, dolorum rerum voluptatum aliquam distinctio impedit! Cum iusto quisquam laborum numquam maxime, error voluptate eligendi atque, enim, similique esse.</p>
+      <p class="text-lg"> DOM full meaning (document object model) .  the DOM makes website dynamically and attractive  , inturputed, we can update content dynamically  </p>
     </div>
     <div class="p-11 shadow-xl m-8">
       <h2 class="text-4xl font-semibold pb-5">How will you select HTML elements using DOM? Name the DOM methods.</h2>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus et, dolorum rerum voluptatum aliquam distinctio impedit! Cum iusto quisquam laborum numquam maxime, error voluptate eligendi atque, enim, similique esse.</p>
+      <p class="text-lg"> 
+        We can selcect HTML elements 5ways using DOM. please see the below i showing DOM Mathods: 
+        <ul class="font-semibold">
+            <li>getElementsByTagName()</li>
+            <li>getElementsByClassName()</li>
+            <li>getElementById()</li>
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+        </ul>
+        <b>getElementsByTagName() :</b> we can select HTML by getElementsByTagName() ex: 
+        document.getElementsByTagName('h2');<br>
+        <b>getElementsByClassName():</b> we can select HTML by getElementsByClassName() ex: 
+        document.getElementsByClassName('title-text');<br>
+        <b>getElementById():</b> if we need only one item then we get that item by getElementById()  ex: 
+        document.getElementsByTagName('main-btn');
+        document.getElementsByClassName('title-text');<br>
+        <b>querySelector():</b> if we geting one item in the UL or others then use querySelector() <small><i>ul just for example</i></small> <br> ex: 
+        document.querySelector()('ul');
+        document.getElementsByClassName('title-text');<br>
+        <b>querySelectorAll():</b> if we geting all UL item the we use querySelectorAll() <small><i>ul just for example</i></small> <br> ex: 
+        document.querySelector()('ul');
+      </p>
     </div>
     <div class="p-11 shadow-xl m-8">
       <h2 class="text-4xl font-semibold pb-5">What is event bubble?</h2>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus et, dolorum rerum voluptatum aliquam distinctio impedit! Cum iusto quisquam laborum numquam maxime, error voluptate eligendi atque, enim, similique esse.</p>
+      <p class="text-lg"> Event bubble give concept about DOM , i will show a example about event bubble <br>
+        we have many tag on body tag if i put a (p) tag or (button) on body the if we clicked button or others tag , thats means we click button and clicked in body,
+        we easly said when i click the button then we also cliked parentNode;
+        <b>example</b> 
+        (ul>li>button)  this place we cklicked button the we atempt 3 place means first cliked button also li and also ul
+      </p>
     </div>
     <div class="p-11 shadow-xl m-8">
       <h2 class="text-4xl font-semibold pb-5">What is a callback function and why will you use it?</h2>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus et, dolorum rerum voluptatum aliquam distinctio impedit! Cum iusto quisquam laborum numquam maxime, error voluptate eligendi atque, enim, similique esse.</p>
+      <p class="text-lg">CallBack function means a function that already created this function we use another function that we create new <br>
+        callback function we can use as an argument a new function
+    </p>
     </div>
   </section>
 </main>
