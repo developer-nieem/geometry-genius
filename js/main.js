@@ -165,3 +165,32 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
     createTableRow('ellipse' ,slNumber, totalResultEllipse);
 
 })
+
+
+// Random card bg color 
+
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+      
+    }
+    console.log(color);
+    return 'rgb(' + color.join(', ') + ')';
+  } 
+  
+//   get card div 
+  const getCard = document.getElementsByClassName('card');
+
+  for (const card of getCard) {
+        card.addEventListener('mouseover' , function(){
+            card.style.backgroundColor =  randomColor();
+        })
+        card.addEventListener('mouseout', function() {
+            card.style.backgroundColor = 'white';
+          });
+  }
+
+
+ 
+  
